@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
+    <!-- meta charset -->
     <meta charset="UTF-8" />
+
+    <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
     <title>Ahmad Jouwdad Aufa Robbani | Web Developer Portofolio</title>
+
+    <!-- meta description -->
     <meta
       name="description"
       content="Portofolio Ahmad Jouwdad Aufa Robbani, web developer pemula dengan fokus HTML & SEO. Lihat karya, project terbaru, dan hubungi untuk kolaborasi."
     />
+
+    <!-- canonical -->
     <link rel="canonical" href="https://auparr-portfolio.vercel.app" />
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/images/web-icon.ico" />
+
+    <!-- open graph -->
     <meta
       property="og:title"
       content="Ahmad Jouwdad Aufa Robbani | Web Developer Portofolio"
@@ -25,29 +37,55 @@
     <meta property="og:url" content="https://auparr-portfolio.vercel.app" />
     <meta property="og:type" content="website" />
 
+    <!-- structured data -->
+    <script type="application/ld+json">
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Ahmad Jouwdad Aufa Robbani",
+          "url": "https://auparr-portfolio.vercel.app",
+          "image": "https://auparr-portfolio.vercel.app/assets/images/preview.png",
+          "jobTitle": "Web Developer",
+          "knowsAbout": ["HTML", "SEO", "Web Development"],
+          "sameAs": [
+            "https://www.linkedin.com/in/ahmad-jouwdad-aufa-robbani-98539b34a/",
+            "https://github.com/auparr",
+            "https://id.quora.com/profile/Ahmad-Jouwdad-Aufa-Robbani",
+            "https://auparr-portfolio.vercel.app"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://auparr-portfolio.vercel.app",
+          "name": "Portofolio Ahmad Jouwdad Aufa Robbani",
+          "author": {
+            "@type": "Person",
+            "name": "Ahmad Jouwdad Aufa Robbani"
+          }
+        }
+      ]
+    </script>
     <style>
-      nav a {
+      a {
         font-size: 24px;
-        padding: 8px 12px;
-        display: inline-block;
+        padding: 12px;
       }
-      h1 {
-        font-size: 2.5rem;
-      }
-      /* bikin semua img responsive */
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
+      li {
+        margin: 10px;
       }
     </style>
   </head>
   <body>
+    <!-- header / navigation -->
     <header>
       <a href="index.html">
         <img
-          src="/assets/images/logo.webp"
+          src="/assets/images/preview.webp"
           alt="Logo Ahmad Jouwdad Aufa Robbani"
+          width="100"
+          height="100"
           decoding="sync"
           fetchpriority="high"
         />
@@ -62,7 +100,9 @@
       </nav>
     </header>
 
+    <!-- main / content -->
     <main aria-label="Main content">
+      <!-- Hero Section -->
       <section aria-label="Hero heading">
         <h1>Ahmad Jouwdad Aufa Robbani - Web Developer</h1>
         <p>
@@ -73,39 +113,54 @@
         <a href="projects.html">Lihat Proyek Web Development Saya.</a>
       </section>
 
+      <!-- Skills Section -->
       <section class="skills" aria-labelledby="skills-heading">
         <h2 id="skills-heading">Keahlian Saya</h2>
         <div class="skills-grid">
           <div class="skill-card">
             <h3>HTML5 Semantik</h3>
             <p>
-              Membangun struktur website terorganisir dengan elemen semantik.
+              Membangun struktur website yang terorganisir dan mudah diakses
+              menggunakan elemen semantik HTML5.
             </p>
           </div>
           <div class="skill-card">
             <h3>CSS3 Modern</h3>
-            <p>Mendesain website responsif dengan Flexbox & Grid.</p>
+            <p>
+              Mendesain tampilan website yang responsif dan menarik dengan
+              Flexbox, Grid, dan fitur CSS3 terkini.
+            </p>
           </div>
           <div class="skill-card">
             <h3>Optimasi SEO</h3>
-            <p>Praktik terbaik SEO on-page untuk meningkatkan visibilitas.</p>
+            <p>
+              Menerapkan praktik terbaik SEO on-page untuk meningkatkan
+              visibilitas website di mesin pencari.
+            </p>
           </div>
           <div class="skill-card">
             <h3>Aksesibilitas Web</h3>
-            <p>Website bisa digunakan semua orang, termasuk disabilitas.</p>
+            <p>
+              Memastikan website dapat diakses dan digunakan oleh semua orang,
+              termasuk pengguna dengan disabilitas.
+            </p>
           </div>
         </div>
       </section>
 
+      <!-- Top Projects -->
       <section class="projects" aria-label="Featured Projects">
         <h2>Proyek Unggulan Saya</h2>
         <div class="projects-grid">
+          <!-- Kelompokin -->
           <article class="projects-card">
             <h3>Kelompokin</h3>
             <figure>
               <img
                 src="/assets/images/projects/kelompokin.webp"
                 alt="Kelompokin - website pengacak kelompok instan"
+                width="300"
+                height="auto"
                 loading="lazy"
               />
               <figcaption>
@@ -117,21 +172,23 @@
               href="https://kelompokin.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
+              >Lihat Kelompokin</a
             >
-              Lihat Kelompokin
-            </a>
           </article>
-
+          <!-- Portofolio -->
           <article class="projects-card">
             <h3>Portofolio</h3>
             <figure>
+              <!-- INI SSANNYA WEB TEMENKU JIR OWKEWOKAOWKOAWK -->
               <img
                 src="/assets/images/projects/portfolio.webp"
                 alt="Web Portofolio Ahmad Jouwdad Aufa Robbani"
+                width="300"
+                height="auto"
                 loading="lazy"
               />
               <figcaption>
-                Preview <b>Portofolio</b>: website perjuangan Aufa meraih
+                Preview <b>Portofolio</b>: website perjuangan aufa meraih
                 cita-cita menjadi web developer sejati.
               </figcaption>
             </figure>
@@ -139,16 +196,17 @@
               href="https://auparr-portfolio.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
+              >Lihat portofolio Ahmad Jouwdad Aufa Robbani</a
             >
-              Lihat portofolio Ahmad Jouwdad Aufa Robbani
-            </a>
           </article>
         </div>
       </section>
     </main>
 
+    <!-- footer -->
     <footer>
       <p>&copy; 2025 Ahmad Jouwdad Aufa Robbani. Semua hak dilindungi.</p>
+
       <nav aria-label="Footer navigation Links">
         <ul>
           <li><a href="about.html">Tentang Saya</a></li>
@@ -156,21 +214,23 @@
           <li><a href="contact.html">Kontak</a></li>
         </ul>
       </nav>
+
       <p>
         Hubungi saya:
         <a
           href="mailto:aufarobbani7@gmail.com"
           aria-label="Kirim email untuk Ahmad Jouwdad Aufa Robbani"
+          >aufarobbani7@gmail.com</a
         >
-          aufarobbani7@gmail.com
-        </a>
       </p>
+
       <ul>
         <li>
           <a
             href="https://github.com/auparr"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Profil GitHub Ahmad Jouwdad Aufa Robbani"
             >GitHub</a
           >
         </li>
@@ -179,6 +239,7 @@
             href="https://www.linkedin.com/in/ahmad-jouwdad-aufa-robbani-98539b34a/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Profil LinkedIn Ahmad Jouwdad Aufa Robbani"
             >LinkedIn</a
           >
         </li>
@@ -187,6 +248,7 @@
             href="https://id.quora.com/profile/Ahmad-Jouwdad-Aufa-Robbani"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Profil Quora milik Ahmad Jouwdad Aufa Robbani"
             >Quora</a
           >
         </li>
